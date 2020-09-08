@@ -1,0 +1,28 @@
+body {
+	display: grid;
+	grid-template-rows: auto 1fr auto auto auto auto;
+}
+
+/* Top header */
+header {
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	justify-items: center;
+	align-items: center;
+}
+
+.search-buttons {
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+
+/* main article */
+main {
+	display: grid;
+	justify-items: center;
+	margin: 0 10%;
+}
+
+.title-image {
+	max-width: 1000px;
+}
