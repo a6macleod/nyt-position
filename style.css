@@ -1,6 +1,34 @@
 body {
 	display: grid;
 	grid-template-rows: auto 1fr auto auto auto auto;
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 1000px;
+}
+
+h1 {
+	font-size: 35px;
+}
+
+h2 {
+	font-size: 25px;
+}
+
+h3 {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.button {
+	background: rgb(86, 123, 149);
+	border: 1px solid rgb(50, 104, 145);
+	color: white;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 10px;
+	font-weight: bold;
 }
 
 /* Top header */
@@ -9,11 +37,31 @@ header {
 	grid-template-columns: auto 1fr auto;
 	justify-items: center;
 	align-items: center;
+	padding: 5px 15px 5px 15px;
+	border-bottom: 1px solid #c5c5c5;
+}
+
+.NYT {
+	/* Change font to old english */
 }
 
 .search-buttons {
 	display: grid;
 	grid-template-columns: auto auto auto;
+	grid-gap: 20px;
+	margin-left: 20px;
+	/*margin-top: 15px;*/
+	align-items: center;
+}
+
+.fas {
+	font-size: 15px;
+	color: #333;
+}
+
+.search-buttons a {
+	color: #030303;
+	text-decoration: none;
 }
 
 /* main article */
