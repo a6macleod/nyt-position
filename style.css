@@ -65,12 +65,30 @@ header {
 }
 
 /* main article */
-main {
+article {
 	display: grid;
+	grid-template-columns: 1fr;
 	justify-items: center;
-	margin: 0 10%;
+	margin: 50px 10%;
 }
 
 .title-image {
 	max-width: 1000px;
+}
+
+figcaption {
+	color: #666;
+}
+
+.credit {
+	color: #888;
+	font-size: 12px;
+}
+
+article .article-title {
+	padding-bottom: 20px;
+	font-style: italic;
+	font-weight: bold;
+	display: block;
+	max-width: 550px;
 }
