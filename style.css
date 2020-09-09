@@ -73,11 +73,14 @@ article {
 }
 
 .title-image {
-	max-width: 1000px;
+	/*max-width: 1000px;*/
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 figcaption {
 	color: #666;
+	grid-column: 1 / -1;
 }
 
 .credit {
