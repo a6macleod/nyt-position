@@ -113,18 +113,28 @@ article .article-title {
 
 .article-details {
 	justify-self: start;
+	grid-column: 2 / span 2;
 	display: grid;
-	grid-template-columns: 2fr repeat(6, 1fr);
+	grid-template-columns: 1fr repeat(6, 1fr);
 	align-items: center;
 	grid-gap: 5px;
 }
 
-.article-details time,
+.author a {
+	text-decoration: none;
+	color: black;
+}
+
+.author a:hover {
+	text-decoration: underline;
+}
+
 .fab,
 .fas,
 .far {
 	color: #000;
 	background: #eee;
-	padding: 10px;
+	padding: 8px;
 	justify-self: end;
+	border-radius: 20px;
 }
