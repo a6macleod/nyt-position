@@ -1,6 +1,6 @@
 body {
-	display: grid;
-	grid-template-rows: auto 1fr auto auto auto auto;
+	/*display: grid;*/
+	/*grid-template-rows: auto 1fr auto auto auto auto;*/
 	box-sizing: border-box;
 }
 
@@ -67,11 +67,11 @@ header {
 /* main article */
 article {
 	display: grid;
-	grid-template-columns: 3fr 12fr 5fr;
+	grid-template-columns: 3fr 4fr 4fr 3fr;
 	grid-gap: 10px 50px;
 	justify-items: center;
 	max-width: 1000px;
-	margin: 200px auto;
+	margin: 50px auto;
 }
 
 article > * {
@@ -83,28 +83,48 @@ article figure {
 	grid-column: 1 / -1;
 }
 
-/*
-.title-image {
+/* hero image */
+.title-image figcaption {
+	padding-right: 100px;
+}
 
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+.author {
+	justify-self: start;
+	padding-top: 30px;
 }
 
 figcaption {
 	color: #666;
-	grid-column: 1 / -1;
 }
 
 .credit {
 	color: #888;
 	font-size: 12px;
 }
-*/
 
+/* Article title and details */
 article .article-title {
 	padding-bottom: 20px;
 	font-style: italic;
 	font-weight: bold;
 	display: block;
 	max-width: 550px;
+}
+
+.article-details {
+	justify-self: start;
+	display: grid;
+	grid-template-columns: 2fr repeat(6, 1fr);
+	align-items: center;
+	grid-gap: 5px;
+}
+
+.article-details time,
+.fab,
+.fas,
+.far {
+	color: #000;
+	background: #eee;
+	padding: 10px;
+	justify-self: end;
 }
