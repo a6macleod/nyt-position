@@ -67,13 +67,25 @@ header {
 /* main article */
 article {
 	display: grid;
-	grid-template-columns: 1fr;
+	grid-template-columns: 3fr 12fr 5fr;
+	grid-gap: 10px 50px;
 	justify-items: center;
-	margin: 50px 10%;
+	max-width: 1000px;
+	margin: 200px auto;
 }
 
+article > * {
+	grid-column: 2 / -2;
+}
+
+article figure {
+	margin: 0;
+	grid-column: 1 / -1;
+}
+
+/*
 .title-image {
-	/*max-width: 1000px;*/
+
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
@@ -87,6 +99,7 @@ figcaption {
 	color: #888;
 	font-size: 12px;
 }
+*/
 
 article .article-title {
 	padding-bottom: 20px;
