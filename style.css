@@ -112,12 +112,14 @@ article .article-title {
 }
 
 .article-details {
-	justify-self: start;
+	/*justify-self: start;*/
 	grid-column: 2 / span 2;
 	display: grid;
-	grid-template-columns: 1fr repeat(6, 1fr);
+	width: 100%;
+	grid-template-columns: 1fr repeat(6, auto);
 	align-items: center;
 	grid-gap: 5px;
+	padding: 30px 0 20px 0;
 }
 
 .author a {
