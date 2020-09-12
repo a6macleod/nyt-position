@@ -21,6 +21,11 @@ h3 {
 	font-weight: bold;
 }
 
+p {
+	font-size: 20px;
+	line-height: 1.6;
+}
+
 .button {
 	background: rgb(86, 123, 149);
 	border: 1px solid rgb(50, 104, 145);
@@ -76,6 +81,7 @@ article {
 
 article > * {
 	grid-column: 2 / -2;
+	width: 100%;
 }
 
 article figure {
@@ -112,7 +118,6 @@ article .article-title {
 }
 
 .article-details {
-	/*justify-self: start;*/
 	grid-column: 2 / span 2;
 	display: grid;
 	width: 100%;
@@ -139,4 +144,17 @@ article .article-title {
 	padding: 8px;
 	justify-self: end;
 	border-radius: 20px;
+}
+
+/* Main article paragraphs */
+.article-links {
+	color: #326891;
+}
+
+strong {
+	font-weight: bold;
+}
+
+img {
+	grid-column: 1 / -1;
 }
