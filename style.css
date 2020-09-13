@@ -158,6 +158,7 @@ strong {
 img,
 .inflation {
 	grid-column: 1 / -1;
+	position: relative;
 }
 
 .inflation,
@@ -167,16 +168,17 @@ img,
 }
 
 .inflation-details {
-	background: lightblue;
 	grid-column: 1 / -1;
 	position: absolute;
-	/*top: -500px;*/
+	overflow: hidden;
 }
 
 .inflation-details p {
 	font-size: 13px;
+	padding: 160px 10px 0 0;
 }
 
 .inflation .bottom {
-	top: -400px;
+	padding-top: 180px;
+	padding-bottom: 50px;
 }
