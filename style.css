@@ -155,6 +155,28 @@ strong {
 	font-weight: bold;
 }
 
-img {
+img,
+.inflation {
 	grid-column: 1 / -1;
+}
+
+.inflation,
+.inflation-details {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.inflation-details {
+	background: lightblue;
+	grid-column: 1 / -1;
+	position: absolute;
+	/*top: -500px;*/
+}
+
+.inflation-details p {
+	font-size: 13px;
+}
+
+.inflation .bottom {
+	top: -400px;
 }
