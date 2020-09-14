@@ -73,7 +73,7 @@ header {
 article {
 	display: grid;
 	grid-template-columns: 3fr 4fr 4fr 3fr;
-	grid-gap: 10px 50px;
+	grid-gap: 10px 10px;
 	justify-items: center;
 	max-width: 1000px;
 	margin: 50px auto;
@@ -192,8 +192,34 @@ img,
 	display: block;
 	content: "";
 	height: 1px;
-	width: 70px;
+	width: 80px;
 	position: absolute;
 	/*left: 3px;*/
 	top: 60px;
+}
+
+/* embeded youtube video */
+.video figcaption {
+	margin-top: 10px;
+}
+
+.video {
+	margin-bottom: 30px;
+}
+
+/* mid-article smaller image */
+.small-image {
+	grid-column: 1 / -1;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	margin-bottom: 30px;
+}
+
+.small-image img {
+	width: 100%;
+	grid-column: 2 / -2;
+}
+
+.small-image figcaption {
+	grid-column: 2 / -2;
 }
