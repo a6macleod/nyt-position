@@ -223,3 +223,9 @@ img,
 .small-image figcaption {
 	grid-column: 2 / -2;
 }
+
+/* Article footer, comments, social media */
+.article-footer p {
+	font-size: 10px;
+	/*grid-column: 1 / -1;*/
+}
